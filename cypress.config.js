@@ -6,7 +6,7 @@ module.exports = defineConfig({
             
     },
 
-    baseUrl: 'http://lojaebac.ebaconline.art.br/'
-    
+    baseUrl: "http://lojaebac.ebaconline.art.br/"
+
   },
 });

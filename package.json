@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/MarceloVieira81/teste-ebac-ui#readme",
   "devDependencies": {
-    "cypress": "^9.7.0"
+    "cypress": "^10.8.0"
   }
 }

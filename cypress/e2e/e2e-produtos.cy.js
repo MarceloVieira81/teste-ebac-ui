@@ -16,7 +16,7 @@ describe('Funcionalidade Página de Produtos', () => {
 
     });
 
-    it.only('Deve adicionar um produto ao carrinho', () => {
+    it('Deve adicionar um produto ao carrinho', () => {
         var quantidade = 8
 
         cy.get('[class="product-block grid"]')
@@ -28,6 +28,14 @@ describe('Funcionalidade Página de Produtos', () => {
 
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
         cy.get('.woocommerce-message').should('contain', quantidade + ' × “Arcadio Gym Short” ')
+    });
+
+    it.only('Deve adicionar produtos ao carrinho usando comando customizado', () => {
+        cy.addProdutos('Argus All-Weather Tank', 'XS', 'Gray', 4)
+    });
+
+    it.only('Deve adicionar produtos ao carrinho usando comando customizado', () => {
+        cy.addProdutos('Arcadio Gym Short', 32, 'Blue', 12)
     });
 
 });
