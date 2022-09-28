@@ -30,11 +30,11 @@ describe('Funcionalidade Página de Produtos', () => {
         cy.get('.woocommerce-message').should('contain', quantidade + ' × “Arcadio Gym Short” ')
     });
 
-    it.only('Deve adicionar produtos ao carrinho usando comando customizado', () => {
+    it('Deve adicionar produtos ao carrinho usando comando customizado', () => {
         cy.addProdutos('Argus All-Weather Tank', 'XS', 'Gray', 4)
     });
 
-    it.only('Deve adicionar produtos ao carrinho usando comando customizado', () => {
+    it('Deve adicionar produtos ao carrinho usando comando customizado', () => {
         cy.addProdutos('Arcadio Gym Short', 32, 'Blue', 12)
     });
 

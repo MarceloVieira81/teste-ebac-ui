@@ -34,7 +34,7 @@ const dadosEndereco = require('../fixtures/endereco.json')
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.') 
    });
 
-   it.only('Deve fazer cadastro de endereço de entrega com sucesso', () => {
+   it('Deve fazer cadastro de endereço de entrega com sucesso', () => {
         EnderecoPage.editarEnderecoEntrega(
             dadosEndereco[2].nome,
             dadosEndereco[1].sobrenome,
